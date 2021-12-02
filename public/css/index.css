@@ -1,0 +1,150 @@
+.container {
+    width: 100%;
+}
+
+.box {
+    display   : flex;
+    margin-top: 1%;
+}
+
+h5,
+h1 {
+    writing-mode: vertical-lr
+}
+
+.header_icon a {
+    text-decoration: none;
+    font-size      : 1.3em;
+    color          : black;
+}
+
+.left_menu {
+    overflow-x      : visible;
+    overflow-y      : auto;
+    background-color: white;
+    height          : 750px;
+}
+
+/* 右icon */
+.header_icon {
+    writing-mode   : vertical-lr;
+    display        : inline-flex;
+    justify-content: space-around;
+    align-items    : center;
+
+
+
+}
+/* 線上點餐 */
+.oder{
+    background-color: rgb(255, 196, 0);
+    border-radius:25px;
+    padding:0.2em;
+    text-align: center;
+}
+/* 左邊選單 */
+header {
+    width  : 250px;
+    display: flex;
+}
+
+.header_icon h3 {
+    display: inline-block;
+}
+.menu li{
+    list-style-type: none;
+}
+.menu p {
+    margin-bottom: 0;
+    color: rgb(228, 186, 109);
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+.banner_p h5 {
+    font-size: 15px;
+}
+
+.banner_active {
+    background-image:url(../images/so-white.png);
+    padding-top     : 100px;
+    display        : flex;
+    justify-content: space-around;
+}
+
+.banner_img {
+    position: relative;
+}
+
+/* 飲料 */
+.himag01 {
+    position: relative;
+    bottom  : 0;
+    left    : 0%;
+    z-index : 5;
+}
+
+.people2 {
+    position: absolute;
+    top     : 0;
+    left    : 45%;
+
+}
+
+/*吸管 */
+.himag03 {
+    position: absolute;
+
+    left: 30%;
+
+}
+
+/* 檸檬 */
+.himag02 {
+    position: absolute;
+    bottom  : 0%;
+    left    : 65%;
+    z-index : 6;
+}
+
+/* 左字 */
+.himag05 {
+    position: absolute;
+    bottom  : 60%;
+    left    : 5%;
+}
+
+/* 右字 */
+.himag06 {
+    position: absolute;
+    bottom  : 40%;
+    left    : 89%;
+    z-index : 7;
+}
+
+/* 右葉 */
+.leaf01 {
+    position: absolute;
+    right   : -25%;
+    bottom  : 10%;
+}
+
+/* 左上葉 */
+.leaf02 {
+    position: absolute;
+    left    : -35%;
+    top     : -20%;
+}
+
+/* 左葉 */
+.leaf03 {
+    position: absolute;
+    left    : 1%;
+    bottom  : 30%;
+}
