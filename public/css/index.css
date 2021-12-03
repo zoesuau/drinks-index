@@ -1,5 +1,7 @@
 .container {
-    width: 100%;
+    max-width   : 1400px;
+    margin-left : auto;
+    margin-right: auto;
 }
 
 .box {
@@ -12,6 +14,17 @@ h1 {
     writing-mode: vertical-lr
 }
 
+h6 {
+    color: darkgoldenrod;
+
+}
+
+.h6top {
+    margin-top: 2em;
+    border-top: 5px solid darkgoldenrod;
+    width     : 6em;
+}
+
 .header_icon a {
     text-decoration: none;
     font-size      : 1.3em;
@@ -19,10 +32,10 @@ h1 {
 }
 
 .left_menu {
-    overflow-x      : visible;
-    overflow-y      : auto;
+    overflow-y      : scroll;
+    position        : fixed;
     background-color: white;
-    height          : 750px;
+    height          : 100vh;
 }
 
 /* 右icon */
@@ -31,36 +44,43 @@ h1 {
     display        : inline-flex;
     justify-content: space-around;
     align-items    : center;
-
-
-
+    height         : 450px;
 }
+
 /* 線上點餐 */
-.oder{
+.oder {
     background-color: rgb(255, 196, 0);
-    border-radius:25px;
-    padding:0.2em;
-    text-align: center;
+    border-radius   : 25px;
+    padding         : 0.2em;
+    text-align      : center;
 }
+
 /* 左邊選單 */
 header {
-    width  : 250px;
+    width  : 180px;
     display: flex;
 }
 
 .header_icon h3 {
     display: inline-block;
 }
-.menu li{
+
+.menu ul {
+    margin-top: -50%;
+}
+
+.menu li {
     list-style-type: none;
 }
+
 .menu p {
     margin-bottom: 0;
-    color: rgb(228, 186, 109);
+    color        : rgb(228, 186, 109);
 }
-.menu a{
+
+.menu a {
     text-decoration: none;
-    color: black;
+    color          : black;
 }
 
 
@@ -72,10 +92,10 @@ header {
 }
 
 .banner_active {
-    background-image:url(../images/so-white.png);
+    background-image: url(../images/so-white.png);
     padding-top     : 100px;
-    display        : flex;
-    justify-content: space-around;
+    display         : flex;
+    justify-content : space-around;
 }
 
 .banner_img {
@@ -147,4 +167,153 @@ header {
     position: absolute;
     left    : 1%;
     bottom  : 30%;
+}
+
+/* 手機導覽漢堡 */
+.menu_icon {
+    width    : 70px;
+    height   : 50px;
+    /* border: 1px solid #000; */
+    position : relative;
+    top      : -60px;
+    right    : -90%;
+    display  : none;
+}
+
+.mobile_menu_icon1,
+.mobile_menu_icon2,
+.mobile_menu_icon3 {
+    transition      : all 1s;
+    position        : absolute;
+    width           : 100%;
+    height          : 8px;
+    background-color: #000;
+}
+
+/* 漢堡選單上面橫槓 */
+.mobile_menu_icon1 {
+
+    top: 0;
+}
+
+/* 漢堡選單下面橫槓 */
+.mobile_menu_icon3 {
+
+    bottom: 0;
+}
+
+/* 漢堡選單中間橫槓 */
+.mobile_menu_icon2 {
+    top      : 50%;
+    transform: translateY(-50%);
+}
+
+/* active 漢堡 */
+.openmobile_menu_icon3,
+.openmobile_menu_icon1 {
+    top      : 50%;
+    transform: translateY(-50%);
+}
+
+.openmobile_menu_icon2 {
+    display: none;
+}
+
+.openmobile_menu_icon1 {
+    transform: rotate(45deg);
+}
+
+.openmobile_menu_icon3 {
+    transform: rotate(-45deg);
+}
+
+.mobile_header {
+    display: none;
+}
+
+.oder2 {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+
+    /* 大選單 */
+    .left_menu {
+        display : none;
+        position: static;
+    }
+
+    /* 手機板header */
+    .mobile_header {
+        display : block;
+        height  : 80px;
+        position: relative;
+    }
+
+    /*    小選單 */
+    .menu {
+        position           : absolute;
+        top                : 80px;
+        left               : 0;
+        width              : 100%;
+        height             : 100%;
+        /* display         : block; */
+        background-image   : url(../images/so-white.png);
+        background-size    : cover;
+        z-index            : 20;
+        /* overflow-y      : hidden; */
+    }
+
+    .menu ul {
+        margin-top: 0%;
+    }
+
+    /* Fbicon */
+    .header_icon {
+        position: absolute;
+        top     : 10%;
+        right   : 8%;
+        z-index : 22;
+        font-size: 0.8em;
+
+    }
+
+    /* 手機線上點餐 */
+    .oder2 {
+        display         : inline-block;
+        background-color: rgb(255, 196, 0);
+        border-radius   : 25px;
+        width           : 350px;
+        margin-top      : 10px;
+        padding         : 0.4em;
+        text-align      : center;
+
+    }
+
+    .oder {
+        display: none;
+    }
+
+    /* 漢堡 */
+    .menu_icon {
+        display: block;
+    }
+
+    h5 {
+        color: rgb(153, 207, 51);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    h5 {
+        color: blue;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    h5 {
+        color: brown;
+    }
 }
