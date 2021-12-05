@@ -17,7 +17,22 @@ $(".menu_icon").on("click", function () {
     }
 
 })
+$(window).resize(function () {
+    console.log("視窗寬度", $(window).width())
+    if ($(window).width() < 1300) {
+        $(".feature1").removeClass("container")
+        $(".feature1 ").addClass("mobile_container")
+        console.log("圖文版remove container")
+        console.log("圖文版+mobule_container")
 
+    } else {
+        $(".feature1").addClass("container")
+        $(".feature1").removeClass("mobile_container")
+
+        console.log("圖文版add container")
+
+    }
+})
 
 
 $(window).resize(function () {
@@ -25,12 +40,13 @@ $(window).resize(function () {
     if ($(window).width() < 1300) {
         $(".banner_active").removeClass("container")
         $(".banner_active").addClass("mobile_container")
-        console.log("remove container")
-        console.log("add container")
+        console.log("飲料版remove container")
+        console.log("飲料版add mobile_container")
 
     } else {
         $(".banner_active").addClass("container")
-        console.log("add container")
+        
+        console.log("飲料版add container")
 
     }
 })

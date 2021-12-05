@@ -1,0 +1,105 @@
+.wrap{
+    
+}
+
+/* 特色1 */
+.feature1{background-color: royalblue;
+    width: 50%;
+ }
+    
+    /* 背景線條 */
+.linebg {
+    /* background-image : url(../images/02/line01.png); */
+    background-size  : cover;
+    background-repeat: no-repeat;
+     width: 100%;
+}
+
+/* 特色1圖片欄 */
+.feature1_img{
+    /* position: relative; */
+    right: 0;
+    /* background-color: rgb(255, 208, 0) ; */
+    width       : 100%;
+   
+
+} 
+/* 店面照片 */
+.dight00{
+    position: absolute;
+    right: 0;
+    border-radius: 250px;
+}
+/* 雙人PNG */
+.dight01{
+position: absolute;
+left: 50%;
+bottom: -150%;
+z-index: 200;
+
+}
+/* 文字PNG */
+.dight02{
+    position: absolute;
+    bottom: -80%;
+    left: 45%;
+}
+/* 泡茶PNG */
+.dight03{
+    position: absolute;
+    left: 45%;
+    bottom: -100%;
+}
+
+
+
+/* 特色1文字欄 */
+.feature1_text{
+    width: 40%;
+ 
+}
+/* 特色1文字欄裡-小標題 */
+.feature1_text_banner {
+    vertical-align : top;
+    width          : 50%;
+    display        : flex;
+    justify-content: space-around;
+
+}
+
+.feaure1_text_banner_logo {
+    background-color : rgb(255, 208, 0);
+    background-image : url(../images/02/people.png);
+    /* padding-bottom: 10%; */
+
+    width        : 50px;
+    height       : 50px;
+    border-radius: 50px 50px;
+}
+
+.feaure1_text_banner_h4 {
+    color        : rgb(255, 208, 0);
+    width        : 15%;
+    border-bottom: 3px solid rgb(255, 208, 0);
+}
+
+.feaure1_text_banner_p {
+    color    : rgb(255, 208, 0);
+    width    : 20%;
+    font-size: 3em;
+    
+}
+/* 特色1按鈕 */
+.feature1_bnt{
+    border: 2px solid#000;
+    width: 10%;
+}
+.feature1_bnt a{
+text-decoration: none;
+color: #000;
+}
+@media screen and (max-width: 1300px) {}
+
+@media screen and (max-width: 910px) {}
+
+@media screen and (max-width: 650px) {}
