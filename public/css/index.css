@@ -1,7 +1,13 @@
 .container {
-    max-width   : 1400px;
-    margin-left : auto;
-    margin-right: auto;
+    width       : 100%;
+    margin-left : 230px;
+    margin-right: 0;
+}
+
+.mobile_container {
+    width         : 100%;
+    /* margin-left: 0;
+    margin-right  : 0; */
 }
 
 .box {
@@ -92,14 +98,23 @@ header {
 }
 
 .banner_active {
-    background-image: url(../images/so-white.png);
+    background-image: url(../images/paper_1.png);
     padding-top     : 100px;
     display         : flex;
     justify-content : space-around;
 }
 
+.mobile_banner_p {
+    display: none;
+}
+
 .banner_img {
     position: relative;
+}
+
+/* 手機板banner */
+.mobile_banner_img {
+    display: none;
 }
 
 /* 飲料 */
@@ -108,21 +123,26 @@ header {
     bottom  : 0;
     left    : 0%;
     z-index : 5;
+    
 }
 
 .people2 {
     position: absolute;
     top     : 0;
     left    : 45%;
+    transform:translatey(-10px);
+    transition: all 0.5s;
 
 }
 
-/*吸管 */
+    /*吸管 */
 .himag03 {
     position: absolute;
 
     left: 30%;
-
+    transform:translatey(8px);
+     transition: all 0.5s ease-in-out 0.58s;
+    
 }
 
 /* 檸檬 */
@@ -131,6 +151,10 @@ header {
     bottom  : 0%;
     left    : 65%;
     z-index : 6;
+    
+    transition: all 0.5s step-end 1s;
+    transform:translate(2px);
+   
 }
 
 /* 左字 */
@@ -138,6 +162,8 @@ header {
     position: absolute;
     bottom  : 60%;
     left    : 5%;
+    transform:translatey(8px);
+     transition: all 1s ease-in-out 0.8s;
 }
 
 /* 右字 */
@@ -146,6 +172,8 @@ header {
     bottom  : 40%;
     left    : 89%;
     z-index : 7;
+    transform:translatey(-8px);
+     transition: all 1s ease-in-out 1s;
 }
 
 /* 右葉 */
@@ -153,6 +181,8 @@ header {
     position: absolute;
     right   : -25%;
     bottom  : 10%;
+    transform:translate(8px);
+    transition: all 1s ease-in-out 1.2s;
 }
 
 /* 左上葉 */
@@ -160,6 +190,8 @@ header {
     position: absolute;
     left    : -35%;
     top     : -20%;
+    transform:translate(18px);
+    transition: all 1s ease-in-out 1.2s;
 }
 
 /* 左葉 */
@@ -167,6 +199,8 @@ header {
     position: absolute;
     left    : 1%;
     bottom  : 30%;
+    transform:translate(8px);
+    transition: all 1s ease-in-out 1.2s;
 }
 
 /* 手機導覽漢堡 */
@@ -270,10 +304,10 @@ header {
 
     /* Fbicon */
     .header_icon {
-        position: absolute;
-        top     : 10%;
-        right   : 8%;
-        z-index : 22;
+        position : absolute;
+        top      : 10%;
+        right    : 8%;
+        z-index  : 22;
         font-size: 0.8em;
 
     }
@@ -299,21 +333,77 @@ header {
         display: block;
     }
 
+    /* 手機板banner */
+    .mobile_banner_img {
+        display: none;
+    }
+
     h5 {
         color: rgb(153, 207, 51);
     }
 
 }
 
-@media screen and (max-width: 768px) {
-    h5 {
-        color: blue;
+@media screen and (max-width: 910px) {
+
+    /* 手機板banner */
+    .mobile_banner_img {
+        display : block;
+        position: relative;
     }
 
+    .mobile_banner_img img {
+        width: 65%;
+
+    }
+
+    .banner_img {
+        display: none;
+    }
+
+    
+
+    h5,
+    h1 {
+        writing-mode: horizontal-tb;
+    }
+
+    .banner_active {
+
+        padding-top    : 100px;
+        display        : block;
+        justify-content: space-around;
+    }
+
+    .banner_text {
+        float: left;
+        width: 35%
+    }
+
+    .banner_img {
+        float: right;
+        width: 60%;
+    }
+
+    .banner_p {
+        display: none;
+    }
+
+    .mobile_banner_p {
+        display: block;
+        
+    }
 }
 
-@media screen and (max-width: 320px) {
-    h5 {
+@media screen and (max-width: 650px) {
+    h1 {
         color: brown;
     }
+
+    .banner_active {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .mobile_banner_img img{width: 100%;}
+    .banner_text{width: 100%;}
 }
