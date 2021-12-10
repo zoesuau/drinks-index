@@ -1,13 +1,3 @@
-.wrap {}
-
-/* 特色1 */
-.feature1 {
-
-    /* background-color: royalblue; */
-    width           : 50%;
-
-}
-
 /* 背景線條 */
 .linebg {
     /* background-image : url(../images/02/line01.png); */
@@ -15,50 +5,39 @@
     background-repeat: no-repeat;
     width            : 100%;
 }
+.linebg {
+    padding-top        : 20%;
+    /* background-color: royalblue; */
+    width              : 100%;
+    display            : flex;
+    flex-direction     : column;
+
+}
+
+/* 特色1 */
+.feature1 {
+    padding-top   : 1em;
+    padding-bottom: 3em;
+    position      : relative;
+}
+
+
 
 /* 特色1圖片欄 */
 .feature1_img {
     /* position: relative; */
     right              : 0;
-    /* background-color: rgb(255, 208, 0) ; */
+    background-color: rgb(255, 208, 0) ;
     width              : 100%;
-
-
+   
 }
-
-/* 店面照片 */
-/* .dight00{
-    position: absolute;
-    right: 0;
-    border-radius: 250px;
-} */
-/* 雙人PNG */
-/* .dight01{
-position: absolute;
-left: 50%;
-bottom: -150%;
-z-index: 200;
-
-} */
-/* 文字PNG */
-/* .dight02{
-    position: absolute;
-    bottom: -80%;
-    left: 45%;
-} */
-/* 泡茶PNG */
-/* .dight03{
-    position: absolute;
-    left: 45%;
-    bottom: -100%;
-} */
 
 
 
 /* 特色1文字欄 */
 .feature1_text {
 
-    width: 40%;
+    width: 20%;
 
 }
 
@@ -96,7 +75,8 @@ z-index: 200;
 
 /* 特色1按鈕 */
 .feature1_bnt {
-    border: 2px solid#000;
+    margin: 1em;
+    border: 4px solid#000;
     width : 10%;
 }
 
@@ -105,30 +85,91 @@ z-index: 200;
     color          : #000;
 }
 
-@media screen and (max-width: 1300px) {}
-
-.linebg {
-    padding-top     : 20%;
-    /* background-color: royalblue; */
-    width           : 100%;
-    display         : flex;
-    flex-direction  : column;
+/* ///////////////////feature2 女生喝茶區塊////////////////////////// */
+.dight04 {
+    padding-top: 15%;
+    width      : 25%;
+}
+.dight_banner01 {
+    width: 35%;
+    padding-right: 5%;
+}
+.dight_banner02 {
+    margin-left: 30%;
+}
+.fearure2_img {
+    /* background-color: blueviolet; */
+    display      : flex;
+    flex-wrap    : wrap;
+    align-content: space-around;
+    align-items  : center;
+    flex         : 0;
 
 }
 
-/* 背景線條 */
-.linebg {
-    background-image : url(../images/02/line01.png);
-    background-size  : cover;
-    background-repeat: no-repeat;
-    width            : 100%;
+.feature2_textbox {
+
+    width         : 20%;
+    padding-left  : 2%;
+    display       : flex;
+    flex-direction: column;
+    align-items   : flex-start;
 }
 
-.feature1 {
-    padding-top   : 1em;
-    padding-bottom: 3em;
-    position      : relative;
+/* 特色2文字欄 */
+.feature2_text {
+
+    width: 20%;
+
 }
+
+/* 特色2文字欄裡-小標題 */
+.feature2_text_banner {
+    vertical-align : top;
+    width          : 80%;
+    display        : flex;
+    justify-content: space-between
+}
+
+.feaure2_text_banner_logo {
+    background-color : rgb(255, 208, 0);
+    background-image : url(../images/02/people.png);
+    /* padding-bottom: 10%; */
+
+    width        : 50px;
+    height       : 50px;
+    border-radius: 50%;
+}
+
+.feaure2_text_banner_h4 {
+    color        : rgb(255, 208, 0);
+    width        : 15%;
+    border-bottom: 3px solid rgb(255, 208, 0);
+    margin  : 0;
+}
+
+.feaure2_text_banner_p {
+    color      : rgb(255, 208, 0);
+    width      : 20%;
+    font-size  : 3em;
+    margin-left: 0;
+}
+
+/* 特色2按鈕 */
+.feature2_bnt {
+    margin: 2em;
+    border: 4px solid#000;
+    width : 50%;
+}
+
+.feature2_bnt a {
+    text-decoration: none;
+    color          : #000;
+}
+
+/* /////////////////////////////////////////////// */
+
+
 
 /* 特色1圖片欄 */
 .feature1_img {}
@@ -172,33 +213,32 @@ z-index: 200;
 
 
 
-/* 特色1文字欄 */
-.feature1_text {
-    width: 40%;
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .feature2_textbox {
+        width        : 40%;
+        padding-right: 25%;
+
+    }
+
+    .dight_banner01 {
+        padding-right: 25%;
+    }
+
+
+
+    .dight04 {
+        padding-top   : 0em;
+        padding-bottom: 15%;
+        width         : 25%;
+    }
 
 }
-
-/* 特色1文字欄裡-小標題 */
-.feature1_text_banner {
-    width: 50%;
-}
-
-.feature1 h2,
-h4 {
-    margin-left : 1em;
-    margin-right: 1em
-}
-
-/* 特色1按鈕 */
-.feature1_bnt {
-    width      : 40%;
-    margin-left: 1em;
-}
-
-
-
-
-
 
 
 
@@ -206,9 +246,9 @@ h4 {
 @media screen and (max-width: 910px) {
     .linebg {
         /* background-color: royalblue; */
-        width           : 100%;
-        display         : flex;
-        flex-direction  : column;
+        width         : 100%;
+        display       : flex;
+        flex-direction: column;
 
     }
 
@@ -287,6 +327,40 @@ h4 {
         width      : 40%;
         margin-left: 1em;
     }
+
+    .feature2_textbox {
+        width        : 40%;
+        padding-right: 10%;
+
+    }
+
+    /* 真人喝茶 */
+    .dight_banner01 {
+
+        width: 100%;
+    }
+
+
+    /* 雙人 */
+    .dight04 {
+
+        padding-bottom: 15%;
+        width         : 40%;
+    }
+
+    /* 泡澡 */
+    .dight04 {}
+
+    .dight_banner02 {
+        margin-left: 55%;
+        width      : 35%;
+
+    }
+
+
+
+
+
 }
 
 
@@ -311,8 +385,8 @@ h4 {
     .dight00 {
         width   : 80%;
         position: relative;
-       top: 0;
-       right: 0;
+        top     : 0;
+        right   : 0;
     }
 
     /* 雙人PNG */
@@ -347,15 +421,58 @@ h4 {
         width: 80%;
     }
 
-    .feature1 h2,
+    /* .feature1 h2,
     h4 {
         margin-left : 1em;
         margin-right: 1em
-    }
+    } */
 
     /* 特色1按鈕 */
     .feature1_bnt {
         width      : 40%;
         margin-left: 1em;
     }
+
+    .feature2_textbox {
+        width        : 40%;
+        padding-right: 10%;
+
+    }
+
+    /* 真人喝茶 */
+    .dight_banner01 {
+        padding-right: 0%;
+        width: 100%;
+    }
+
+
+    /* 雙人 */
+    .dight04 {
+
+        display: none;
+    }
+
+    /* 泡澡 */
+    .dight05 {
+        width: 70%;
+     
+    }
+
+    /* 茶葉 */
+    .dight_banner02 {
+        margin-left  : 0%;
+        width        : 30%;
+        margin-bottom: 20%;
+        position     : relative;
+        left         : -15%;
+        z-index      : 33;
+    }
+
+    /* 字 */
+    .dight06 {
+        display: none;
+    }
+
+
+
 }

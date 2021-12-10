@@ -18,6 +18,22 @@ $(".menu_icon").on("click", function () {
 
 })
 $(window).resize(function () {
+    
+    if ($(window).width() < 1300) {
+        $(".feature2").removeClass("container")
+        $(".feature2 ").addClass("mobile_container")
+        console.log("女文版remove container")
+        console.log("女文版+mobule_container")
+
+    } else {
+        $(".feature2").addClass("container")
+        $(".feature2").removeClass("mobile_container")
+
+        console.log("女版add container")
+
+    }
+})
+$(window).resize(function () {
     console.log("視窗寬度", $(window).width())
     if ($(window).width() < 1300) {
         $(".feature1").removeClass("container")
