@@ -20,6 +20,22 @@ $(".menu_icon").on("click", function () {
 $(window).resize(function () {
     
     if ($(window).width() < 1300) {
+        $(".feature3").removeClass("container")
+        $(".feature3 ").addClass("mobile_container")
+        console.log("飲料版remove container")
+        console.log("飲料版+mobule_container")
+
+    } else {
+        $(".feature3").addClass("container")
+        $(".feature3").removeClass("mobile_container")
+
+        console.log("飲料add container")
+
+    }
+})
+$(window).resize(function () {
+    
+    if ($(window).width() < 1300) {
         $(".feature2").removeClass("container")
         $(".feature2 ").addClass("mobile_container")
         console.log("女文版remove container")
