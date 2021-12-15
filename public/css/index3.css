@@ -1,18 +1,10 @@
-ul {
-    padding: 0;
-}
-
-.feature3_textbox {
-    width: 30%;
-}
-
-/* 特色1文字欄 */
 
 
-/* 特色3文字欄裡-小標題 */
+
+/* /////////////////特色3文字欄裡-小標題//////////////////// */
 .feature3_text_banner {
     vertical-align : top;
-    width          : 50%;
+    width          : 70%;
     display        : flex;
     justify-content: space-between;
 
@@ -45,7 +37,7 @@ ul {
 .feature3_bnt {
     margin: 1em;
     border: 4px solid#000;
-    width : 30%;
+    width : 70%;
     clear : both;
 }
 
@@ -53,10 +45,8 @@ ul {
     text-decoration: none;
     color          : #000;
 }
+/* ///////////////////特色3文字欄裡-小標題 end////////////////// */
 
-.feature3 li {
-    list-style-type: none;
-}
 
 .feature3_text_play h3 {
 
@@ -66,45 +56,23 @@ ul {
 
 }
 
-/* <!-- 飲品名稱輪播 --> */
-.feature3_text_play ul {
-    width   : 100%;
-    display : flex;
-    overflow: hidden;
-
-}
-
-.feature3_text_play h3 {
-    width: 380px;
-}
 
 .feature3_textbox {
-    /* float: left; */
-
+    width: 27%;
 }
-
 .feature3_img {
     width           : 70%;
-    background-color: chartreuse;
-    /* float: right; */
 }
 
-.feature3_img ul {
-    display         : flex;
-   
-    background-color: burlywood;
-    overflow        : hidden;
-}
-.feature3_img li{
-    width: 50%;
-    background-color: cornflowerblue;
 
-
-}
-
-.feature3{
+.feature3 {
+    margin-top: 10%;
     display: flex;
+    justify-content: space-between;
 }
+
+
+
 
 @media screen and (max-width: 1300px) {}
 

@@ -1,3 +1,69 @@
+$('.slide-content').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [{
+        breakpoint: 1024,
+        settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+        }
+    },
+    {
+        breakpoint: 910,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+        }
+    },
+    {
+        breakpoint: 650,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+    }
+       
+    ]
+})
+
+$('.slide-content1').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [{
+        breakpoint: 1024,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+        }
+    },
+    {
+        breakpoint: 910,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+    },
+    {
+        breakpoint: 650,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+    }
+       
+    ]
+})
+
 $(".menu_icon").on("click", function () {
     console.log("hi")
 
@@ -82,3 +148,14 @@ $(window).resize(function () {
 
     }
 })
+
+
+// $(".feature3_text_play  li:last-child ").clone().prependTo(".feature3_text_play ul")
+// $(".feature3_text_play  li").eq(1).clone().appendTo(".feature3_text_play>ul ")
+
+// let play_offset = 0
+// $(".next").on("click",function(){
+//     $(".feature3_text_play  li").animeat({"margin-left" = play_offset }400)
+//     console.log("0")
+
+// })

@@ -10,7 +10,17 @@
     <link rel="stylesheet" href="public/css/index3.css">
     <link rel="stylesheet" href="public/css/index2.css">
     <link rel="stylesheet" href="public/css/index.css">
-
+    <!-- 飲料輪播 -->
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick-1.8.1/slick/slick-theme.css" />
+    <style>
+        .slick-prev:before,
+        .slick-next:before {
+            color: #000;
+            border: 3px solid #000;
+            border-bottom: 20%;
+        }
+    </style>
 
 </head>
 
@@ -191,6 +201,7 @@
                 </div>
                 <!--fearure2_img -->
             </div> <!-- feature2 END -->
+
             <div class="feature3  container">
                 <div class="feature3_textbox">
                     <!-- 特色小標+名稱輪播 -->
@@ -204,104 +215,128 @@
                         獨特飲品與特調</h4>
                     <div class="feature3_text_play">
                         <!-- 飲品名稱輪播 -->
-                        <ul>
-                            <li>
+                        <div class="slide-content1">
+                            <div>
+
                                 <h3>Black tea with Milk</h3>
                                 <a href="">醇紅米洛克</a>
-                            </li>
-                            <li>
+                            </div>
+                            <div>
+
                                 <h3>Milk Tea with Tapioca and Taro Ball</h3>
                                 <a href="">雙胞胎奶茶</a>
-                            </li>
-                            <li>
+                            </div>
+                            <div>
+
                                 <h3>Passion Fruit with Tapioca and Nata Jelly and Aiyu Jelly</h3>
                                 <a href="">搖滾百香香</a>
-                            </li>
-                            <li>
+                            </div>
+                            <div>
+
                                 <h3>Oolong Tea Milk With Cheese Cover</h3>
                                 <a href="">芝士黑龍</a>
-                            </li>
-                            <li>
+
+                            </div>
+                            <div>
+
                                 <h3>Chocolate Milk</h3>
                                 <a href="">巴黎可可</a>
-                            </li>
-                            <li>
+                            </div>
+                            <div>
+
                                 <h3>Mango Smoothie With Cheese Cover</h3>
                                 <a href="">芒果芝芝</a>
-                            </li>
-                            <li>
+                            </div>
+                            <div>
+
                                 <h3>Milk With Mashed Taro</h3>
                                 <a href="">小時候芋泥相見</a>
-                            </li>
-                            <li>
+                            </div>
+                            <div>
+
                                 <h3>Fruit Tea</h3>
                                 <a href="">文青水果茶</a>
-                            </li>
-                        </ul>
-                    </div>
+                            </div>
 
-                    <div class="feature3_bnt"> <a href=""> 加入我們 →</a></div>
+                        </div>
 
-                </div> <!-- feature3_textbox -->
+
+                        <div class="feature3_bnt"> <a href=""> 菜單一覽 → </a></div>
+
+                    </div> <!-- feature3_play -->
+                    <!-- 特色小標+名稱輪播 -->
+
+                </div> <!-- feature3_textbox end -->
+
                 <!-- 特色小標+名稱輪播 -->
-
-
                 <div class="feature3_img">
-                    <ul>
-                        <li>
+
+                    <div class="slide-content">
+                        <div>
                             <img src="public/images/04/001.png" alt="">
                             <h3>Black tea with Milk</h3>
                             <a href="">醇紅米洛克</a>
-                        </li>
-                        <li>
+                        </div>
+                        <div style="height:300px">
                             <img src="public/images/04/002.png" alt="">
                             <h3>Milk Tea with Tapioca and Taro Ball</h3>
                             <a href="">雙胞胎奶茶</a>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                             <img src="public/images/04/003.png" alt="">
                             <h3>Passion Fruit with Tapioca and Nata Jelly and Aiyu Jelly</h3>
                             <a href="">搖滾百香香</a>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                             <img src="public/images/04/004.png" alt="">
                             <h3>Oolong Tea Milk With Cheese Cover</h3>
                             <a href="">芝士黑龍</a>
-                        </li>
-                        <li>
+
+                        </div>
+                        <div>
                             <img src="public/images/04/005.png" alt="">
                             <h3>Chocolate Milk</h3>
                             <a href="">巴黎可可</a>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                             <img src="public/images/04/006.png" alt="">
                             <h3>Mango Smoothie With Cheese Cover</h3>
                             <a href="">芒果芝芝</a>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                             <img src="public/images/04/007.png" alt="">
                             <h3>Milk With Mashed Taro</h3>
                             <a href="">小時候芋泥相見</a>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                             <img src="public/images/04/008.png" alt="">
                             <h3>Fruit Tea</h3>
                             <a href="">文青水果茶</a>
-                        </li>
-                    </ul>
-                </div> <!-- feature3_img -->
-                <div></div>
-                <div></div>
-            </div> <!--  feature3 -->
+                        </div>
+
+                    </div>
+
+                </div> <!-- feature3_img  end-->
+
+            </div><!-- feature3  end-->
+
+
         </div>
-
-
-    </div>
-    <!--wrap  END -->
+        <!--wrap  END -->
     </div>
     <!--whitebg    end-->
+
+
     <script src="public/js/jquery-3.6.0.min.js"></script>
+
+    <!-- 飲料輪播 -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+    <!-- 飲料輪播 -->
+
     <script src="public/js/inedx.js"></script>
+
 </body>
 
 </html>
