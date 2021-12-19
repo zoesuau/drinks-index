@@ -1,0 +1,14 @@
+.newsbox{
+    background-color: rgb(46, 46, 85);
+    color: wheat;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.news_img_box{
+    width: 70%;
+
+}
+.news_text{
+    width: 25%;
+}

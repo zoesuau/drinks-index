@@ -4,7 +4,9 @@
     margin-right: 0px ;
    
 }
-
+.whitebg{
+    background-image: url(../images/02/so-white.png);
+}
 .mobile_container {
     width         : 100%;
   

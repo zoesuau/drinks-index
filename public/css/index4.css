@@ -1,0 +1,92 @@
+.newsbox {
+    background-color: rgb(35, 54, 85);
+    color           : white;
+    display         : flex;
+    justify-content : space-between;
+    padding-top: 2%;
+ padding-bottom: 2%;
+
+}
+
+.re_news_img_box {
+    margin-left: 5%;
+    width      : 79%
+}
+
+.re_news_img_box img {
+    width     : 95%;
+    border    : 3px solid whitesmoke;
+    margin-top: 5%;
+
+}
+
+.re_news_img_box h2,
+p {
+    width: 70%;
+}
+/* 標題黃底 */
+.re_news_img_box h2 {
+    text-decoration:underline;
+    text-decoration-color:rgb(255, 208, 0); 
+   
+    /* border-bottom: 2px solid rgb(255, 208, 0); */
+}
+/* 小標及日期 */
+.newsinfo {
+    width          : 80%;
+    display        : flex;
+    align-items    : center;
+    letter-spacing: 0.5em;
+}
+
+.newsinfo::before {
+    content         : " i";
+    text-align      : center;
+    align-items     : flex-end;
+    border-radius   : 50%;
+    width           : 18px;
+    height          : 18px;
+    background-color: rgb(255, 208, 0);
+}
+
+.newsicon {
+    padding-right: 1em;
+    border-right : 2px solid white;
+}
+
+.new_text {
+    width: 25%;
+    writing-mode: vertical-lr ;
+    color: white;
+}
+.new_text a{
+    
+    color: white;
+    border:3px solid white;
+    padding: 1%;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+@media screen and (max-width: 1300px) {}
+
+@media screen and (max-width: 910px) {}
+
+
+@media screen and (max-width: 650px) {
+
+
+    .re_news_img_box img {
+        width     : 100%;
+       
+    
+    }
+    .newsbox {
+       
+        display         : flex;
+        flex-wrap: wrap;
+       justify-content: center;
+        padding-top: 2%;
+     padding-bottom: 2%;
+    
+    }
+}

@@ -86,6 +86,22 @@ $(".menu_icon").on("click", function () {
 $(window).resize(function () {
     
     if ($(window).width() < 1300) {
+        $(".newsbox").removeClass("container")
+        $(".newsbox ").addClass("mobile_container")
+        console.log("飲料版remove container")
+        console.log("飲料版+mobule_container")
+
+    } else {
+        $(".newsbox").addClass("container")
+        $(".newsbox").removeClass("mobile_container")
+
+        console.log("最新消息add container")
+
+    }
+})
+$(window).resize(function () {
+    
+    if ($(window).width() < 1300) {
         $(".feature3").removeClass("container")
         $(".feature3 ").addClass("mobile_container")
         console.log("飲料版remove container")
@@ -150,6 +166,39 @@ $(window).resize(function () {
 })
 
 
+
+$('.re_news_img_box').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    responsive: [{
+        breakpoint: 1024,
+        settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+        }
+    },
+    {
+        breakpoint: 910,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+        }
+    },
+    {
+        breakpoint: 650,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+    }
+       
+    ]
+})
 // $(".feature3_text_play  li:last-child ").clone().prependTo(".feature3_text_play ul")
 // $(".feature3_text_play  li").eq(1).clone().appendTo(".feature3_text_play>ul ")
 

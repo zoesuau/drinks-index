@@ -1,6 +1,3 @@
-
-
-
 /* /////////////////特色3文字欄裡-小標題//////////////////// */
 .feature3_text_banner {
     vertical-align : top;
@@ -45,6 +42,7 @@
     text-decoration: none;
     color          : #000;
 }
+
 /* ///////////////////特色3文字欄裡-小標題 end////////////////// */
 
 
@@ -60,19 +58,27 @@
 .feature3_textbox {
     width: 27%;
 }
+
 .feature3_img {
-    width           : 70%;
+    width: 70%;
 }
 
 
 .feature3 {
-    margin-top: 10%;
-    display: flex;
+    margin-top     : 10%;
+    display        : flex;
     justify-content: space-between;
 }
 
+.slide-content {
+    text-align    : center;
+    padding-bottom: 5%;
+}
 
-
+.slide-content img {
+    max-width   : 80%;
+    padding-left: 30%;
+}
 
 @media screen and (max-width: 1300px) {}
 
