@@ -21,6 +21,38 @@ $(".menu_icon").on("click", function () {
 $(window).resize(function () {
     
     if ($(window).width() < 1300) {
+        $(".yellow_bubble").removeClass("container")
+        $(".yellow_bubble ").addClass("mobile_container")
+        console.log("泡泡remove container")
+        console.log("泡泡+mobule_container")
+        
+    } else {
+        $(".yellow_bubble ").addClass("container")
+        $(".yellow_bubble ").removeClass("mobile_container")
+
+        console.log("泡泡add container")
+        
+    }
+})
+$(window).resize(function () {
+    
+    if ($(window).width() < 1300) {
+        $("footer ").removeClass("container")
+        $("footer ").addClass("mobile_container")
+        console.log("頁尾remove container")
+        console.log("頁尾+mobule_container")
+        
+    } else {
+        $("footer ").addClass("container")
+        $("footer ").removeClass("mobile_container")
+
+        console.log("頁尾add container")
+        
+    }
+})
+$(window).resize(function () {
+    
+    if ($(window).width() < 1300) {
         $(".store_box").removeClass("container")
         $(".store-box ").addClass("mobile_container")
         console.log("店鋪remove container")
@@ -58,11 +90,14 @@ $(window).on('load',function(){
         $(".feature2").removeClass("container")
         $(".feature1").removeClass("container")
         $(".banner_active").removeClass("container")
-       
+        $("footer").removeClass("container")
+        
+        $(".yellow_bubble").removeClass("container")
         
         
     } else {
         
+      
         
     }
     });
@@ -267,6 +302,8 @@ $(".store_box_img").eq(1).clone().appendTo(".store_box_slide")
 
 
 let current_slide_offset = -1060
+let store_box_img_width =$(".store_box_img").width()
+console.log(store_box_img_width,"text")
 
 function prev() {
     current_slide_offset = current_slide_offset + 1060
@@ -297,7 +334,7 @@ function next() {
         //動畫執行完才執行
         current_slide_offset = -1060
     }
-    // $(".slide_content").animate({"margin-left":-1140},400)
+    // $(".slide_content").
 }// #next click end
 
 $("#prev").on("click", function () {

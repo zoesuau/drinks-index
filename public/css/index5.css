@@ -1,0 +1,73 @@
+.yellow_bubble {
+    width: 100%;
+    background-color: rgb(255, 208, 0);
+    padding-top         : 5%;
+    padding-bottom         : 5%;
+
+    text-align: center;
+    position  :relative;
+}
+
+.yellow_bubble img {
+    border-radius: 99em;
+}
+.yellow_bubble a{
+    
+    display: inline-block;
+    margin-top: 2em;
+    text-decoration: none;
+    color: #000;
+    padding: 1em;
+    border: 3px solid#000;
+}
+
+.yellow01{
+    position: absolute;
+    left  : 5%;
+    top: 5%;
+}
+.yellow02{
+    position: absolute;
+
+    left: 4%;
+    top: 40%;
+}
+.yellow03{
+    position: absolute;
+
+    top: 2%;
+    right: 16%;
+}
+.yellow04{
+    position: absolute;
+
+    bottom: 22%;
+    right: 19%;
+}
+.yellow05{
+    position: absolute;
+
+    bottom: 40%;
+    right: 3%;
+}
+@media screen and (max-width: 1300px) {}
+
+@media screen and (max-width: 910px) {
+    .yellow01,
+    .yellow02,
+    .yellow03,
+    .yellow04,
+    .yellow05{
+        display:none;
+    }
+    
+       .yellow_bubble{
+        padding-bottom: 15%;
+    }   
+
+}
+
+
+@media screen and (max-width: 650px) {
+  
+}

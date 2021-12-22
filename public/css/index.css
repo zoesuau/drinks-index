@@ -17,6 +17,7 @@
 .box {
     display   : flex;
     margin-top: 1%;
+    justify-content: space-between;
 }
 
 h5,
@@ -103,6 +104,7 @@ header {
 }
 
 .banner_active {
+    width: 100%;
     background-image: url(../images/paper_1.png);
     padding-top     : 100px;
     display         : flex;
@@ -216,7 +218,7 @@ header {
     /* border: 1px solid #000; */
     position : relative;
     top      : -60px;
-    right    : -90%;
+    right    : -80%;
     display  : none;
 }
 
@@ -277,6 +279,7 @@ header {
 
 @media screen and (max-width: 1300px) {
 
+  
     /* 大選單 */
     .left_menu {
         display : none;

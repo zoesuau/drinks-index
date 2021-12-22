@@ -1,0 +1,158 @@
+footer {
+   position: relative;
+    display        : flex;
+    flex-wrap      : nowrap;
+    justify-content: space-between;
+    padding-top    : 4%;
+
+    padding-bottom: 3%;
+}
+.footer_textlogo {
+    
+    width:30%;
+    position: relative;
+    background-image: url(../images/09/logotxt.png);
+    background-repeat:no-repeat;
+    background-position: right 0 bottom 0;
+
+}
+.footer_logo {
+    width: 30%;
+}
+
+.footer_logo img {
+
+    width: 80%;
+}
+
+.footer_textbox {
+   
+    text-align: center;
+    width     : 60%;
+    font-size : 0.5em;
+}
+
+.footer_textbox p {
+    display   : block;
+    text-align: center;
+    margin    : auto;
+
+
+}
+.footer_textlogo{
+    width: 30%;
+}
+
+.gototop {
+    position: absolute;
+  top:50%;
+  left: 50%;
+  top:  -3.8%;
+  transform: translate(-50%, -50%);
+    width   : 50px;
+    height  : 50px;
+    border  : 3px solid #000;
+}
+
+.gototop a {
+    text-decoration: none;
+    color          : #000;
+    text-align     : center;
+    font-size      : 35px;
+    display        : block;
+}
+
+/* ///頁尾// */
+.footer_blk_nav {
+    width   : 100%;
+    position: fixed;
+    bottom  : -2%;
+    left: 0;
+    right: 0;
+
+}
+
+.footer_blk_nav ul {
+    display        : flex;
+    justify-content: space-between;
+    padding-left   : 0;
+}
+.footer_blk_nav li{
+
+width: 25%;}
+
+
+.footer_blk_nav {
+    z-index: 30;
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    footer {
+
+        padding-bottom: 8%;
+    }
+
+    .footer_blk_nav {
+        display: block;
+    }
+
+    .footer_blk_nav li {
+        width : 25%;
+        height: 80px;
+
+        background-color: #000;
+        list-style-type : none;
+        text-align      : center;
+        border-right    : 2px solid darkkhaki;
+        word-break: break-all;
+       display: block;
+    }
+
+    .footer_blk_nav a {
+        text-decoration: none;
+        color          : cornsilk;
+        /* font-size   : 40px; */
+        align-items    : center;
+        display        : block;
+        line-height    : 80px;
+
+    }
+}
+
+@media screen and (max-width: 910px) {
+    footer {
+        display        : flex;
+        flex-wrap      : wrap;
+        justify-content: space-between;
+
+    }
+
+    .footer_textbox {
+        width: 100%;
+        order: -1;
+    }
+
+    .footer_logo {
+        width: 50%;
+        
+    }
+
+    .footer_textlogo {
+        width: 50%;
+        position: relative;
+        background-image: url(../images/09/logotxt.png);
+        background-repeat:no-repeat;
+        background-position: right 0 bottom 0;
+    }
+
+  
+}
+
+@media screen and (max-width: 650px) {
+
+    footer {
+
+        padding-bottom: 25%;
+    }
+}
