@@ -79,36 +79,40 @@ p {
 
 /* 店鋪區塊 */
 
-
+.store_rwd{
+    width: 100%;
+    margin:  0 auto;
+}
 /* 第一層 */
 .store_box{
     overflow: hidden;
     position: relative;
+    max-width: 1060px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: auto auto;
+
 }
 /* 第二層 */
 .store_box_slide{
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin: 2%;
+   
     width: calc(1060px * 8);
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
+    
      margin-left: -1060px;
    
 }
 /* 第三層 */
 .store_box_img {
-    /* max-width:1060px; */
-    position : relative;
-    width: 100%;
-   
-    
+    max-width:1060px;
+    /* position : relative; */
+    /* width: 80%; */
+
+    float: right;
 }
 
 .store_box_img img {
     width         : 100%;
-    padding-bottom: 5%;
+    /* padding-bottom: 5%; */
 
 
 }
@@ -171,11 +175,40 @@ p {
 }
 @media screen and (max-width: 1300px) {}
 
-@media screen and (max-width: 910px) {}
+@media screen and (max-width: 910px) {
+    .store_box_slide{
+        margin-bottom: 10%;
+    }
+    .store_box_text {
+        width            : 100%;
+      
+        /* position         : absolute; */
+        /* bottom           :-30%;
+        left             : 0; */
+        /* display          : flex;
+       flex-direction: column; */
+    
+    
+        padding-top: 1%;
+    
+    }
+}
 
 
 @media screen and (max-width: 650px) {
-
+    .store_box_text {
+        width            : 100%;
+      
+        /* position         : absolute; */
+        /* bottom           :-30%;
+        left             : 0; */
+        display          : flex;
+       flex-direction: column;
+    
+    
+        padding-top: 1%;
+    
+    }
 
     .re_news_img_box img {
         width: 100%;

@@ -23,14 +23,14 @@ $(window).resize(function () {
     if ($(window).width() < 1300) {
         $(".yellow_bubble").removeClass("container")
         $(".yellow_bubble ").addClass("mobile_container")
-        console.log("泡泡remove container")
-        console.log("泡泡+mobule_container")
+        console.log("泡泡-r-")
+        console.log("泡泡+")
         
     } else {
         $(".yellow_bubble ").addClass("container")
-        $(".yellow_bubble ").removeClass("mobile_container")
+        // $(".yellow_bubble ").removeClass("mobile_container")
 
-        console.log("泡泡add container")
+        console.log("泡泡-")
         
     }
 })
@@ -39,14 +39,14 @@ $(window).resize(function () {
     if ($(window).width() < 1300) {
         $("footer ").removeClass("container")
         $("footer ").addClass("mobile_container")
-        console.log("頁尾remove container")
-        console.log("頁尾+mobule_container")
+        console.log("頁尾--")
+        console.log("頁尾+")
         
     } else {
         $("footer ").addClass("container")
-        $("footer ").removeClass("mobile_container")
+        // $("footer ").removeClass("mobile_container")
 
-        console.log("頁尾add container")
+        console.log("頁尾-")
         
     }
 })
@@ -55,14 +55,14 @@ $(window).resize(function () {
     if ($(window).width() < 1300) {
         $(".store_box").removeClass("container")
         $(".store-box ").addClass("mobile_container")
-        console.log("店鋪remove container")
-        console.log("店鋪+mobule_container")
+        console.log("店鋪--")
+        console.log("店鋪+")
         
     } else {
         $(".store_box").addClass("container")
-        $(".store_box").removeClass("mobile_container")
+        // $(".store_box").removeClass("mobile_container")
 
-        console.log("店鋪add container")
+        console.log("店鋪-")
         
     }
 })
@@ -71,14 +71,14 @@ $(window).resize(function () {
     if ($(window).width() < 1300) {
         $(".newsbox").removeClass("container")
         $(".newsbox ").addClass("mobile_container")
-        console.log("飲料版remove container")
-        console.log("飲料版+mobule_container")
+        console.log("最新消息--")
+        console.log("最新消息+")
         
     } else {
         $(".newsbox").addClass("container")
-        $(".newsbox").removeClass("mobile_container")
+        // $(".newsbox").removeClass("mobile_container")
 
-        console.log("最新消息add container")
+        console.log("最新消息-")
         
     }
 })
@@ -97,24 +97,30 @@ $(window).on('load',function(){
         
     } else {
         
-      
+    
         
     }
     });
-
+ // if (window.dialogArguments != null) {
+    //     if ($.browser.msie == true) {
+    //         $('body').css('overflow-y', 'auto');
+    //         $('body').css('overflow-x', 'hidden');
+    //         $('.working-content,.loading-content').css('margin-left', '220px');
+    //     }
+    // }  
 $(window).resize(function () {
     
     if ($(window).width() < 1300) {
         $(".feature3").removeClass("container")
         $(".feature3 ").addClass("mobile_container")
-        console.log("飲料版remove container")
-        console.log("飲料版+mobule_container")
+        console.log("飲料版--")
+        console.log("飲料版+")
         
     } else {
         $(".feature3").addClass("container")
-        $(".feature3").removeClass("mobile_container")
+        // $(".feature3").removeClass("mobile_container")
         
-        console.log("飲料add container")
+        console.log("飲料-")
         
     }
 })
@@ -123,14 +129,14 @@ $(window).resize(function () {
     if ($(window).width() < 1300) {
         $(".feature2").removeClass("container")
         $(".feature2 ").addClass("mobile_container")
-        console.log("女文版remove container")
-        console.log("女文版+mobule_container")
+        console.log("女文版--")
+        console.log("女文版+")
 
     } else {
-        $(".feature2").addClass("container")
-        $(".feature2").removeClass("mobile_container")
+        $(".feature2").addClass("-")
+        // $(".feature2").removeClass("mobile_container")
 
-        console.log("女版add container")
+        console.log("女版-")
         
     }
 })
@@ -139,14 +145,14 @@ $(window).resize(function () {
     if ($(window).width() < 1300) {
         $(".feature1").removeClass("container")
         $(".feature1 ").addClass("mobile_container")
-        console.log("圖文版remove container")
-        console.log("圖文版+mobule_container")
+        console.log("圖文版--")
+        console.log("圖文版+")
         
     } else {
         $(".feature1").addClass("container")
-        $(".feature1").removeClass("mobile_container")
+        // $(".feature1").removeClass("mobile_container")
 
-        console.log("圖文版add container")
+        console.log("圖文版-")
         
     }
 })
@@ -157,13 +163,13 @@ $(window).resize(function () {
     if ($(window).width() < 1300) {
         $(".banner_active").removeClass("container")
         $(".banner_active").addClass("mobile_container")
-        console.log("飲料版remove container")
-        console.log("飲料版add mobile_container")
+        console.log("飲料版--")
+        console.log("飲料版+")
         
     } else {
         $(".banner_active").addClass("container")
         
-        console.log("飲料版add container")
+        console.log("飲料版-")
         
     }
 })
@@ -299,19 +305,19 @@ $('.re_news_img_box').slick({
 
 $(".store_box_img:last-child ").clone().prependTo(".store_box_slide")
 $(".store_box_img").eq(1).clone().appendTo(".store_box_slide")
-
-
 let current_slide_offset = -1060
 let store_box_img_width =$(".store_box_img").width()
+
+
 console.log(store_box_img_width,"text")
 
 function prev() {
     current_slide_offset = current_slide_offset + 1060
     if (current_slide_offset == 0) {
         $(".store_box_slide").animate({ "margin-left": current_slide_offset }, 400, function () {
-        $(".store_box_slide").css({ "margin-left": -8480 })
+        $(".store_box_slide").css({ "margin-left": -6360 })
         })
-        current_slide_offset = -8480
+        current_slide_offset = -6360
     } else {
         $(".store_box_slide").animate({ "margin-left": current_slide_offset }, 400)
 
@@ -324,7 +330,7 @@ function next() {
     console.log(current_slide_offset)
     current_slide_offset = current_slide_offset - 1060
 
-    if (current_slide_offset != -8480) {
+    if (current_slide_offset != -6360) {
         $(".store_box_slide").animate({ "margin-left": current_slide_offset }, 400)
     } else {
         //callback
