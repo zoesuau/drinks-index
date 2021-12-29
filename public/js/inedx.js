@@ -70,7 +70,7 @@ $(window).resize(function () {
     
     if ($(window).width() < 1300) {
         $(".newsbox").removeClass("container")
-        $(".newsbox ").addClass("mobile_container")
+        $(".newsbox").addClass("mobile_container")
         console.log("最新消息--")
         console.log("最新消息+")
         

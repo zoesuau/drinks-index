@@ -74,8 +74,8 @@ footer {
 
 .footer_blk_nav ul {
     display        : flex;
-    justify-content: space-between;
-    padding-left   : 0;
+    /* justify-content: space-between; */
+    /* padding-left   : 0; */
 }
 .footer_blk_nav li{
 
@@ -93,11 +93,13 @@ width: 25%;}
         padding-bottom: 8%;
     }
 
-    .footer_blk_nav {
+    .footer_blk_nav { 
+        margin: auto;
         display: block;
     }
 
     .footer_blk_nav li {
+       
         width : 25%;
         height: 80px;
 

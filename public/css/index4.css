@@ -199,7 +199,7 @@ p {
     .store_box_text {
         width            : 100%;
       
-        /* position         : absolute; */
+        position   :static;
         /* bottom           :-30%;
         left             : 0; */
         display          : flex;

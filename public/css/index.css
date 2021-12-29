@@ -1,3 +1,7 @@
+ul,li,a{
+    margin: 0;
+    padding: 0;
+}
 .container {
     width       :100%;
     margin-left : 230px;
@@ -30,7 +34,9 @@ h5,
 h1 {
     writing-mode: vertical-lr
 }
-
+body{
+  box-sizing: border-box;
+}
 h6 {
     color: darkgoldenrod;
 
@@ -311,9 +317,9 @@ header {
     width    : 70px;
     height   : 50px;
     /* border: 1px solid #000; */
-    position : relative;
-    top      : -60px;
-    right    : -85%;
+    position : absolute;
+    top      :15%;
+    right: 5%;
     display  : none;
 }
 
