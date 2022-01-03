@@ -32,14 +32,14 @@
 
 /* 特色3按鈕 */
 .feature3_bnt {
-    border         : 3px solid #000;
-    margin         : 1.5em;
-    padding        : 0.5em;
-    display        : flex;
-    text-decoration: none;
-    color          : black;
-    width          : 40%;
-    clear          : both;
+    border: 3px solid #000;
+
+    padding           : 0.5em;
+    /* display        : flex; */
+    text-decoration   : none;
+    color             : black;
+    width             : 40%;
+    /* clear          : both; */
 }
 
 .feature3 a {
@@ -60,37 +60,37 @@
 
 
 .feature3_textbox {
-    width: 27%;
+    width: 15%;
 }
 
 .feature3_img {
     width: 70%;
 }
 
-
-.feature3 {  position      : relative;
-    margin-top     : 10%;
+.feature3 {
+    /* position      : relative; */
+    /* margin-top     : 10%; */
     display        : flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .slide-content {
-  
-    text-align    : center;
-    padding-bottom: 5%;
+    /* width: 100% ; */
+    text-align       : center;
+    /* padding-bottom: 5%; */
 }
 
-.slide_content_text {
-    position        :absolute;
-  left: -100%;
-   top       : 10%;
-    z-index         : 999;
-    background-color: blue;
+.slide-content  div{
+
+}
+.slide-content h3 {
+    font-size: 1em;
 }
 
 .slide-content img {
-    max-width   : 80%;
-    padding-left: 30%;
+
+    /* max-width: 100%; */
+    margin   : auto;
 }
 
 @media screen and (max-width: 1300px) {}

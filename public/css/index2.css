@@ -1,10 +1,9 @@
-
 /* 背景線條 */
 .linebg {
     background-image : url(../images/02/line01.png);
     background-size  : cover;
     background-repeat: no-repeat;
-   
+
     padding-top        : 20%;
     /* background-color: royalblue; */
     width              : 90%;
@@ -14,17 +13,18 @@
 
 /* 特色1 */
 .feature1 {
-    box-sizing: border-box;
+
+    box-sizing       : border-box;
     /* padding-top   : 1em;
-    padding-bottom: 2em; */
-    position      : relative;
-  
-   width: 100%;
-   background-image: url(../images/paper_1.png);
-   padding-top     : 100px;
-   display         : flex;
-   justify-content : space-around;
-  
+    padding-bottom   : 2em; */
+    position         : relative;
+
+    width           : 100%;
+    background-image: url(../images/paper_1.png);
+    padding-top     : 100px;
+    display         : flex;
+    justify-content : space-around;
+
 }
 
 
@@ -32,10 +32,10 @@
 /* 特色1圖片欄 */
 .feature1_img {
     /* position: relative; */
-    right              : 0;
-    background-color: rgb(255, 208, 0) ;
-    width              : 30%;
-   
+    right           : 0;
+    background-color: rgb(255, 208, 0);
+    width           : 30%;
+
 }
 
 
@@ -43,9 +43,9 @@
 .dight00 {
     width        : 30%;
     border-radius: 50%;
-    position: absolute;
-    bottom  : 0%;
-    right   : 0%;
+    position     : absolute;
+    bottom       : 0%;
+    right        : 0%;
 }
 
 /* 雙人PNG */
@@ -61,6 +61,7 @@
     position: absolute;
     bottom  : 35%;
     right   : 43%;
+    animation   : dight06show 2500ms infinite ease-in-out;
 
 }
 
@@ -71,7 +72,6 @@
     bottom  : 0%;
     right   : 45%;
 }
-
 
 
 /* 特色1文字欄 */
@@ -118,7 +118,7 @@
     border         : 3px solid #000;
     margin         : 1.5em;
     padding        : 0.5em;
-    width: 10%;
+    width          : 10%;
     text-decoration: none;
     color          : black;
 }
@@ -132,21 +132,57 @@
 .dight04 {
     padding-top: 15%;
     width      : 25%;
- }/*/雙人/ */
-.dight_banner01 {
-    width: 35%;
-    padding-right: 5%;
 }
+
+/*/雙人/ */
+.dight_banner01 {
+    width        : 35%;
+    padding-right: 5%;
+
+}
+
 .dight_banner02 {
     margin-left: 30%;
 }
+
+.dight06 {
+
+    position    : absolute;
+    top         : 20%;
+    right       : 5%;
+    /* transform: translate(-100%, -30%); */
+    animation   : dight06show 2500ms infinite ease-in-out;
+}
+
+@keyframes dight06show {
+    0% {
+        -webkit-transform: rotate(-5deg) scale(1) translate(-100%, -30%);
+        transform        : rotate(-5deg) scale(1) translate(-100%, -30%);
+    }
+
+    50% {
+        -webkit-transform: rotate(5deg) scale(1) translate(-100%, -30%);
+        transform        : rotate(5deg) scale(1) translate(-100%, -30%);
+    }
+
+    100% {
+        -webkit-transform: rotate(-5deg) scale(1) translate(-100%, -30%);
+        transform        : rotate(-5deg) scale(1) translate(-100%, -30%);
+    }
+
+}
+
 .fearure2_img {
+    position           : relative;
     /* background-color: blueviolet; */
-    display      : flex;
-    flex-wrap    : wrap;
-    align-content: space-around;
-    align-items  : center;
-    flex         : 0;
+    display            : flex;
+    flex-wrap          : wrap;
+    /* align-content   : space-between; */
+    justify-content    : space-between;
+    align-items        : center;
+    flex               : 0;
+    background-image   : url(../images/03/line02.png);
+    background-repeat  : no-repeat;
 
 }
 
@@ -188,7 +224,7 @@
     color        : rgb(255, 208, 0);
     width        : 15%;
     border-bottom: 3px solid rgb(255, 208, 0);
-    margin  : 0;
+    margin       : 0;
 }
 
 .feaure2_text_banner_p {
@@ -234,7 +270,7 @@
     }
 
     .dight_banner01 {
-        width: 40%;
+        width        : 40%;
         padding-right: 25%;
     }
 
@@ -391,7 +427,7 @@
 
     /* 店面照片 */
     .dight00 {
-      
+
         width   : 60%;
         position: absolute;
         top     : -3%;
@@ -443,13 +479,14 @@
     }
 
     .feature2_textbox {
-        width        : 100%;
-        padding-right: 10%;
-        text-align: center;
+        width         : 100%;
+        padding-right : 10%;
+        text-align    : center;
         /* line-height: 100px; */
-        margin: auto;
+        margin        : auto;
 
     }
+
     /* .feature2_textbox h2{
        margin-top: 5%;
         margin: auto;
@@ -462,7 +499,7 @@
     /* 真人喝茶 */
     .dight_banner01 {
         padding-right: 0%;
-        width: 100%;
+        width        : 100%;
     }
 
 
@@ -475,16 +512,16 @@
     /* 泡澡 */
     .dight05 {
         width: 70%;
-     
+
     }
 
     /* 茶葉 */
     .dight_banner02 {
-        margin-left  : 0%;
-        width        : 30%;
-        margin-bottom: 20%;
-        position     : relative;
-        left         : -15%;
+        margin-left     : 0%;
+        width           : 30%;
+        margin-bottom   : 20%;
+        position        : relative;
+        left            : -15%;
         /* z-index      : ; */
     }
 

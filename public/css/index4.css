@@ -10,7 +10,7 @@
 
 .re_news_img_box {
     margin-left: 5%;
-    width      : 79%;
+    width      : 69%;
 
 }
 
@@ -96,14 +96,14 @@ p {
 /* 第二層 */
 .store_box_slide{
    
-    width: calc(1060px * 8);
+    width: calc(1140px * 8);
     
-     margin-left: -1060px;
+     margin-left: -1140px;
    
 }
 /* 第三層 */
 .store_box_img {
-    max-width:1060px;
+    /* max-width:1060px; */
     /* position : relative; */
     /* width: 80%; */
 
@@ -111,7 +111,7 @@ p {
 }
 
 .store_box_img img {
-    width         : 100%;
+    width         : 145%;
     /* padding-bottom: 5%; */
 
 

@@ -174,73 +174,121 @@ $(window).resize(function () {
     }
 })
 
-
-
-$('.slide-content').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [{
-        breakpoint: 1024,
-        settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
-        }
-    },
-    {
-        breakpoint: 910,
-        settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-        }
-    },
-    {
-        breakpoint: 650,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-        }
-    }
-       
-    ]
-})
-
 $('.slide-content1').slick({
-    infinite: true,
+
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slide-content',
+    autoplaySpeed: 2000,
+
+  });
+  $('.slide-content').slick({
+
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slide-content1',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true,
+   
     autoplay: true,
+    infinite: true, 
     autoplaySpeed: 2000,
     responsive: [{
-        breakpoint: 1024,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
-        }
-    },
-    {
-        breakpoint: 910,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-        }
-    },
-    {
-        breakpoint: 650,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-        }
-    }
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 910,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 650,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+               
+            ]
+  });
+      
+
+// $('.slide-content').slick({
+//     infinite: true,
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 2000,
+//     responsive: [{
+//         breakpoint: 1024,
+//         settings: {
+//             slidesToShow: 3,
+//             slidesToScroll: 1,
+//             infinite: true,
+//             dots: true
+//         }
+//     },
+//     {
+//         breakpoint: 910,
+//         settings: {
+//             slidesToShow: 2,
+//             slidesToScroll: 1
+//         }
+//     },
+//     {
+//         breakpoint: 650,
+//         settings: {
+//             slidesToShow: 1,
+//             slidesToScroll: 1
+//         }
+//     }
        
-    ]
-})
+//     ]
+// })
+
+// $('.slide-content1').slick({
+//     infinite: true,
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 2000,
+//     responsive: [{
+//         breakpoint: 1024,
+//         settings: {
+//             slidesToShow: 1,
+//             slidesToScroll: 1,
+//             infinite: true,
+//             dots: true
+//         }
+//     },
+//     {
+//         breakpoint: 910,
+//         settings: {
+//             slidesToShow: 1,
+//             slidesToScroll: 1
+//         }
+//     },
+//     {
+//         breakpoint: 650,
+//         settings: {
+//             slidesToShow: 1,
+//             slidesToScroll: 1
+//         }
+//     }
+       
+//     ]
+// })
 
 $('.re_news_img_box').slick({
     infinite: true,
@@ -312,7 +360,7 @@ let store_box_img_width =$(".store_box_img").width()
 console.log(store_box_img_width,"text")
 
 function prev() {
-    current_slide_offset = current_slide_offset + 1060
+    current_slide_offset = store_box_img_width + 1060
     if (current_slide_offset == 0) {
         $(".store_box_slide").animate({ "margin-left": current_slide_offset }, 400, function () {
         $(".store_box_slide").css({ "margin-left": -6360 })
