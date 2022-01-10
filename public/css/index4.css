@@ -39,24 +39,26 @@ p {
 
 /* 小標及日期 */
 .newsinfo {
-    width         : 80%;
+    width         : 90%;
     display       : flex;
     align-items   : center;
-    letter-spacing: 0.2em;
+    /* letter-spacing: 0.2em; */
+    padding-top: 2%;
+    padding-left: 2%;
 }
 
 .newsinfo::before {
     content         : " i";
     text-align      : center;
     align-items     : flex-end;
-    border-radius   : 50%;
-    width           : 18px;
-    height          : 18px;
+    border-radius   : 50% 50%;
+    width           : 20px;
+    height          : 20px;
     background-color: rgb(255, 208, 0);
 }
 
 .newsicon {
-    padding-right: 1em;
+    /* padding-right: 1em; */
     border-right : 2px solid white;
 }
 

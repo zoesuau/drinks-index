@@ -3,10 +3,10 @@ ul,li,a{
     padding: 0;
 }
 .container {
-    width: 1440px;
-    /* width: calc(100% - 230px);  */
+    /* width: 1440px; */
+    width: calc(100% - 230px); 
      margin-left : 230px;
-    margin-right: 0px ;
+    /* margin-right: 230px ; */
     margin-top: 2em;
     margin-bottom: 2em;
     
